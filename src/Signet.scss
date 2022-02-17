@@ -1,15 +1,79 @@
 .Signet{
-    max-width: 300px;
-    max-height: 350px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    svg{
+        color: #cbcac8;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+    }
+
+    svg:hover{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
     div:first-of-type{
-        max-height: 55%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .images{
+        max-height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
         img{
-            max-width: 300px;
-            min-height: 192px;
-            object-fit: cover;
+            min-height: 200px;
+            max-height: 250px;
         }
     }
-    div:last-of-type{
-        max-height: 45%;
+    .texte{
+        display: flex;
+        flex-direction: column;
+        max-height: 150px;
+        color: white;
+        height: 150px;
+
+        h2{
+            margin: 20px auto 10px 20px;
+        }
+
+        p{
+            margin: 0 auto 15px 20px;
+        }
+
+         > *{
+            margin-left: 20px;
+        }
+
+        button{
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+
+            align-self: end;
+            margin-right: 20px;
+
+                    
+                svg{
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+                svg:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+        }
     }
 }
