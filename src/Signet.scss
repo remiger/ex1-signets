@@ -1,0 +1,15 @@
+.Signet{
+    max-width: 300px;
+    max-height: 350px;
+    div:first-of-type{
+        max-height: 55%;
+        img{
+            max-width: 300px;
+            min-height: 192px;
+            object-fit: cover;
+        }
+    }
+    div:last-of-type{
+        max-height: 45%;
+    }
+}
