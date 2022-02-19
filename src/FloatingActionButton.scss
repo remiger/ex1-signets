@@ -1,5 +1,13 @@
 .FloatingActionButton{
-    position: absolute;
-    right: 35px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 35px;
+    .MuiBox-root{
+        margin-left: auto;
+        // 27 px car 8 px margin du bouton par defaut, 8 + 27 = 35px total
+        margin-right: 27px;
+    }
 }
